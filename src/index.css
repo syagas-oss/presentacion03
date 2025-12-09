@@ -2,32 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
-  height: 100%;
-  margin: 0;
+html {
   scroll-behavior: smooth;
 }
 
-#root {
-  min-height: 100vh;
-  width: 100%;
-  position: relative;
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-/* Custom scrollbar for webkit */
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
-
 ::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.1);
+  background: #0B1120;
 }
-
 ::-webkit-scrollbar-thumb {
-  background: rgba(0, 92, 185, 0.5);
+  background: #334155;
   border-radius: 4px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 92, 185, 0.8);
+  background: #475569;
 }

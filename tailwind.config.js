@@ -6,19 +6,17 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        nestle: {
-          blue: '#005CB9', // NHSc Corporate Blue
-          light: '#E6F0FA',
-          accent: '#00A3E0', // Medical Cyan
-          gold: '#C5A900', // Subtle gold hint
-        }
-      },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        sans: ['Inter', 'Roboto', 'sans-serif'],
       },
-      animation: {
-        'slow-spin': 'spin 20s linear infinite',
+      colors: {
+        'bio-blue': '#005CA9', // Azul médico corporativo
+        'bio-light-blue': '#E1F5FE',
+        'bio-gold': '#D4AF37', // Dorado sutil
+        'bio-dark': '#0B1120', // Fondo oscuro para contraste
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
       }
     },
   },
